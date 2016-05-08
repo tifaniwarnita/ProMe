@@ -21,34 +21,9 @@
         android:adjustViewBounds="true"
         android:src="@drawable/logo_tulisan_prome" />
 
-    <LinearLayout
-        android:id="@+id/login_fragment_container"
+    <include layout="@layout/content_login"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
-
-        <ImageButton
-            android:id="@+id/button_login_as_guest"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_margin="16dp"
-            android:scaleType="centerInside"
-            android:adjustViewBounds="true"
-            android:src="@drawable/button_login_as_guest"
-            android:background="@android:color/transparent"/>
-
-        <ImageButton
-            android:id="@+id/button_login_as_admin"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_margin="16dp"
-            android:scaleType="centerInside"
-            android:adjustViewBounds="true"
-            android:src="@drawable/button_login_as_admin"
-            android:background="@android:color/transparent"/>
-
-    </LinearLayout>
+        android:layout_weight="1"/>
 
 </LinearLayout>
