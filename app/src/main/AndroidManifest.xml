@@ -32,6 +32,16 @@
         <activity
             android:name=".GuestActivity"
             android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".AvailablePlacesActivity"
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".TutorialActivity"
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

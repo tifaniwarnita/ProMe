@@ -23,8 +23,8 @@
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:textColorSecondary">@android:color/white</item>
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorAccent">@android:color/darker_gray</item>
-        <item name="colorControlNormal">@android:color/darker_gray</item>
-        <item name="colorControlActivated">@android:color/darker_gray</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
     </style>
 </resources>

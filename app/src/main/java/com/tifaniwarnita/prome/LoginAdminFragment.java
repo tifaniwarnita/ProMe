@@ -16,8 +16,8 @@ import android.widget.Toast;
  * A simple {@link Fragment} subclass.
  */
 public class LoginAdminFragment extends Fragment {
-    private static final String USERNAME_DUMMY = "tes";
-    private static final String PASSWORD_DUMMY = "tespassword";
+    private static final String USERNAME_DUMMY = "admin";
+    private static final String PASSWORD_DUMMY = "pondokindah";
 
     public LoginAdminFragment() {
         // Required empty public constructor
@@ -50,7 +50,7 @@ public class LoginAdminFragment extends Fragment {
                             Toast.LENGTH_SHORT)
                             .show();
                 } else {
-                    Intent intent = new Intent(getActivity(), LoginActivity.class); //TODO: Change to admin class
+                    Intent intent = new Intent(getActivity(), AdminActivity.class);
                     startActivity(intent);
                     getActivity().overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }

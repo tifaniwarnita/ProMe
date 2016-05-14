@@ -17,4 +17,10 @@ public class LoginActivity extends AppCompatActivity {
                 .replace(R.id.login_fragment_container, new LoginSelectionFragment())
                 .commit();
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 }
