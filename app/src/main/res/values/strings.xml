@@ -6,4 +6,16 @@
     <string name="login">Login</string>
     <string name="no_nearby_device">No nearby device</string>
     <string name="available_places">Available Places</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="promo_title">Promo Title</string>
+    <string name="period">Period</string>
+    <string name="submit">SUBMIT</string>
+    <string name="category">Category</string>
+    <string name="upload">Upload Promo Picture</string>
+
+    <string-array name="category">
+        <item>Food</item>
+        <item>Fashion</item>
+        <item>Others</item>
+    </string-array>
 </resources>
