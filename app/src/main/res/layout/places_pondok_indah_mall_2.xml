@@ -1,0 +1,34 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    android:background="@drawable/border"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:src="@drawable/pondok_indah_mall_jakarta_selatan"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:text="Pondok Indah Mall 2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="Jakarta Pusat"/>
+
+</LinearLayout>

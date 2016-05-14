@@ -45,6 +45,7 @@ public class LoginSelectionFragment extends Fragment {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 fm.beginTransaction()
                         .replace(R.id.login_fragment_container, new LoginAdminFragment())
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out)
                         .addToBackStack(null)
                         .commit();
             }

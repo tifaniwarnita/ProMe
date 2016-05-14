@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+def YOUTUBE_API_KEY = '"' + YoutubeApiKey + '"' ?: '"Define Youtube API key"';
 
 android {
     compileSdkVersion 23
@@ -12,9 +13,13 @@ android {
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            buildConfigField 'String', 'YOUTUBE_API_KEY', YOUTUBE_API_KEY
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'YOUTUBE_API_KEY', YOUTUBE_API_KEY
         }
     }
 }
@@ -26,4 +31,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:support-v4:23.3.0'
     compile 'com.android.support:design:23.3.0'
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
 }

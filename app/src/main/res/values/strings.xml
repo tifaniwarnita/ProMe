@@ -12,10 +12,16 @@
     <string name="submit">SUBMIT</string>
     <string name="category">Category</string>
     <string name="upload">Upload Promo Picture</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="player_error">Unable to load video</string>
 
     <string-array name="category">
         <item>Food</item>
         <item>Fashion</item>
         <item>Others</item>
     </string-array>
+    <string name="title_activity_promo">PromoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="promo">Promo</string>
 </resources>
