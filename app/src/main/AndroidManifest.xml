@@ -3,6 +3,7 @@
     package="com.tifaniwarnita.prome">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen">
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,8 @@
         </activity>
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen">
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,13 +33,16 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".GuestActivity"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AdminActivity"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AvailablePlacesActivity"
             android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen" />
@@ -47,7 +53,8 @@
         <activity
             android:name=".PromoActivity"
             android:label="@string/title_activity_promo"
-            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+            android:theme="@style/AppTheme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

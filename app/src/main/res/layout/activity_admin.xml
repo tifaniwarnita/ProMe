@@ -63,7 +63,7 @@
             android:id="@+id/activity_admin_period"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:hint="@string/period"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -107,6 +107,7 @@
             android:textColor="@android:color/white"/>
 
         <ImageButton
+            android:id="@+id/image_upload_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

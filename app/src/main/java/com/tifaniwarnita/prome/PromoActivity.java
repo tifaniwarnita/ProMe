@@ -55,7 +55,7 @@ public class PromoActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
-            if(extras.getString(ADDED) == null) {
+            if(extras == null) {
                 isAdded = false;
             } else {
                 isAdded = true;
@@ -125,27 +125,41 @@ public class PromoActivity extends AppCompatActivity {
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
-        private static int[] promoAll = {
+        private static final int[] promoAll = {
                 R.layout.promo_totok_kesehatan_makmur,
                 R.layout.promo_the_goods_dept_raffle,
                 R.layout.promo_starbucks,
                 R.layout.promo_fish_n_co
         };
 
-        private static int[] promoFood = {
+        private static final int[] promoFood = {
                 R.layout.promo_starbucks,
                 R.layout.promo_fish_n_co
         };
 
-        private static int[] promoFashion = {
+        private static final int[] promoFashion = {
                 R.layout.promo_the_goods_dept_raffle,
         };
 
-        private static int[] promoOthers = {
+        private static final int[] promoOthers = {
                 R.layout.promo_totok_kesehatan_makmur
         };
 
+        private ArrayList<Promo> all = new ArrayList<>();
+        private ArrayList<Promo> food = new ArrayList<>();
+        private ArrayList<Promo> fashion = new ArrayList<>();
+        private ArrayList<Promo> others = new ArrayList<>();
+
         public PlaceholderFragment() {
+            for (Promo promo : PromoList.getPromoList()) {
+                if (promo.getCategory().equalsIgnoreCase("FOOD"))
+                    food.add(promo);
+                else if (promo.getCategory().equalsIgnoreCase("FASHION"))
+                    fashion.add(promo);
+                else if (promo.getCategory().equalsIgnoreCase("OTHERS"))
+                    others.add(promo);
+                all.add(promo);
+            }
         }
 
         /**
@@ -170,16 +184,16 @@ public class PromoActivity extends AppCompatActivity {
             int section = getArguments().getInt(ARG_SECTION_NUMBER);
             switch (section) {
                 case 1:
-                    gridView.setAdapter(new PlacesAdapter(getContext(), promoAll));
+                    gridView.setAdapter(new PlacesAdapter(getContext(), promoAll, all));
                     break;
                 case 2:
-                    gridView.setAdapter(new PlacesAdapter(getContext(), promoFood));
+                    gridView.setAdapter(new PlacesAdapter(getContext(), promoFood, food));
                     break;
                 case 3:
-                    gridView.setAdapter(new PlacesAdapter(getContext(), promoFashion));
+                    gridView.setAdapter(new PlacesAdapter(getContext(), promoFashion, fashion));
                     break;
                 case 4:
-                    gridView.setAdapter(new PlacesAdapter(getContext(), promoOthers));
+                    gridView.setAdapter(new PlacesAdapter(getContext(), promoOthers, others));
                     break;
             }
             //TextView textView = (TextView) rootView.findViewById(R.id.section_label);

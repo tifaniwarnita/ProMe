@@ -38,7 +38,7 @@ public class TutorialActivity extends YouTubeBaseActivity implements YouTubePlay
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
         if (!b) {
-            youTubePlayer.cueVideo("Jfuk05S-H24"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            youTubePlayer.cueVideo("3OUqhtSWnL4"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
         }
     }
 
